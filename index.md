@@ -1,6 +1,11 @@
+---
+title: Home
+layout: home
+---
+
 # Intro
 
-Curious about the IntelliJ IDE works? [Pablo Baxter](https://github.com/pablobaxter) and I wrote this guide to help you better understand the IDE internals and enable you to ask more insightful questions especially when filing bug reports. 
+Curious about the IntelliJ IDE works? [Pablo Baxter](https://github.com/pablobaxter) and I wrote this guide to help you better understand the IDE internals and enable you to ask more insightful questions especially when filing bug reports.
 
 Follow the Quickstart below to get started.
 
