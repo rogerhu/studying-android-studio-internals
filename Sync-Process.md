@@ -1,5 +1,5 @@
 ---
-title: Sync Process
+title: Understanding the Sync Process
 layout: default
 ---
 
