@@ -1,3 +1,8 @@
+---
+title: Sync Process
+layout: default
+---
+
 The sync process is used to transfer knowledge of your build configurations (e.g. build targets, dependencies, subprojects) in a way that can be used by IntelliJ. Currently these models are transferred with Gradle's [Tooling API](https://docs.gradle.org/current/userguide/third_party_integration.html#embedding) and does not take advantage configuration caching. The sync process is quite complex and relies a lot on different approaches (e.g. dynamic loading of model builder classes) to provide this information.
 
 We can observe how the sync process works by reviewing the IDE logs and noticing how the Gradle Tooling API being invoked with an `ijinit.gradle` script:

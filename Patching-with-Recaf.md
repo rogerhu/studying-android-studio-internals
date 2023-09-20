@@ -1,3 +1,8 @@
+---
+title: Patching with Recaf
+layout: default
+---
+
 ## Figuring out where to patch
 
 You’ll want to use grep to find declarations of a class. Let’s for instance say we want to find the `ProjectImportAction` class that gets used in Android Studio to sync the repository:
