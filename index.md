@@ -100,11 +100,12 @@ https://github.com/JetBrains/intellij-community/releases/tag/idea%2F223.8836.35
 
 And then use the `attach sources` to use the files.
 
-### IntelliJ Gradle Plugin
+### Testing different IDE versions
 
-If you want to test different Android Studio versions, the best way to do it is to use the Intellij Gradle Plugin.
+Another way of testing IDE versions is to launch them within Android Studio using the Intellij Gradle Plugin. It allows you to launch an IDE within Android Studio, which lets you
+attach breakpoints.
 
-1. Add this to your `build.gradle.kts` file (see [source](https://github.com/rogerhu/intellij-gradle-plugin-demo/blob/master/build.gradle.kts#L3-L12)) as an example):
+1. Add the IntelliJ Gradle plugin to your `build.gradle.kts` file (see [source](https://github.com/rogerhu/intellij-gradle-plugin-demo/blob/master/build.gradle.kts#L3-L12)) as an example):
 
 ```gradle
 
@@ -140,3 +141,4 @@ tasks.named<RunIdeTask>("runIde").configure {
     jvmArgs = listOf("-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5006")
 }
 ```
+
