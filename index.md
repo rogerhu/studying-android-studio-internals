@@ -34,6 +34,9 @@ The quickest way to get started is to use the open source versions of the Androi
    git clone git://git.jetbrains.org/idea/android.git android
    ```
 
+   NOTE: the JetBrains Android plugin is maintained separately from [Google's version](https://android.googlesource.com/platform/tools/base/+log/refs/heads/mirror-goog-studio-main).
+   See the section below on how to use the Android plugin from Google.
+   
 ## Step 2: Setup Android Studio
 
 Because Android Studio is a Java process, you can setup config options to be to attach to it.
