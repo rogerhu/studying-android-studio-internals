@@ -93,7 +93,9 @@ You'll want to install a copy of IntelliJ to be able to attach to Android Studio
    org.gradle.jvmargs=-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005
    ```
 
-   If you want the Gradle daemon to wait until a debugger is attached, use `suspend=y`. For large Gradle subprojects
+   If you want the Gradle daemon to wait until a debugger is attached, use `suspend=y`. For large Gradle subprojects with long configuration times, you
+   might not need to set this option.
+   
 2. `./gradlew --stop`
 
 3. `./gradlew help` to restart the daemon
