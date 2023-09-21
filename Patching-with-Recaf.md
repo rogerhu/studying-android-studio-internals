@@ -3,6 +3,13 @@ title: Patching with Recaf
 layout: default
 ---
 
+# Why
+
+One of the challenges with Android Studio is that it isn't completely open-source. You can build most of the Android dependencies by following
+[these steps](https://github.com/rogerhu/android-studio-builder#step-by-step-guide-for-mac), but there are internal libraries that are private to
+Google. You can recompile IntelliJ Community and the plugin, but you can also use this approach patch existing JAR files. We used this approach to verify
+a [memory leak](https://blog.p-y.wtf/gradle-intellij-memory-leak) could be fixed!
+
 ## Figuring out where to patch
 
 You’ll want to use grep to find declarations of a class. Let’s for instance say we want to find the `ProjectImportAction` class that gets used in Android Studio to sync the repository:
