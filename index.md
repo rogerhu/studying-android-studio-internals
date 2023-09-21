@@ -90,7 +90,7 @@ You'll want to install a copy of IntelliJ to be able to attach to Android Studio
 1. Modify your `~/.gradle/gradle.properties` and add the following:
 
    ```gradle
-   org.gradle.jvmargs=-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5006
+   org.gradle.jvmargs=-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005
    ```
 
    If you want the Gradle daemon to wait until a debugger is attached, use `suspend=y`. For large Gradle subprojects
