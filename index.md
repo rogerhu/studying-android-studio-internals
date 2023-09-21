@@ -63,7 +63,7 @@ Because Android Studio is a Java process, you can setup config options to be to 
 
 ## Step 3: Attach debugger 
 
-You'll first need to decide whether you need to attach a debugger to Android Studio, or the Gradle daemon. For more information, see how the [sync process](Sync-Process.md) works.
+You'll first need to decide whether you need to attach a debugger to Android Studio, or the Gradle daemon. For more information, see how the [sync process](Sync-Process.html) works.
 
 You'll want to install a copy of IntelliJ to be able to attach to Android Studio. You may need to upgrade to the latest IntelliJ version.
 
