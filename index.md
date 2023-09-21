@@ -100,12 +100,12 @@ You'll want to install a copy of IntelliJ to be able to attach to Android Studio
 
 ### Using the Android plugin from Google (optional)
 
-You can also download the Android plugin maintained by Google, which is a separate fork and requires a few more advanced steps that includes downloading multiple repos and invoking Bazel to build a build of the protobuf dependencies. See https://github.com/rogerhu/android-studio-builder#step-by-step-guide-for-mac for instructions about how to get this plugin working in IntelliJ. 
+You can also download the Android plugin maintained by Google, which is a separate fork and requires a few more advanced steps that includes downloading multiple repos and invoking Bazel to build a build of the protobuf dependencies. See [this link](https://github.com/rogerhu/android-studio-builder#step-by-step-guide-for-mac) for instructions about how to get this plugin working in IntelliJ. 
 
 <img width="1562" alt="image" src="https://github.com/rogerhu/studying-android-studio-internals/assets/326857/5f1923ee-0725-46b5-baf2-4d17182ac24a">
 
 Attaching sources to the IntelliJ requires download the corresponding Android Studio. For instance, for Giraffe, we can download the .ZIP file:
 
-https://github.com/JetBrains/intellij-community/releases/tag/idea%2F223.8836.35
+[https://github.com/JetBrains/intellij-community/releases/tag/idea%2F223.8836.35](https://github.com/JetBrains/intellij-community/releases/tag/idea%2F223.8836.35)
 
 And then use the `attach sources` to use the files.
