@@ -66,7 +66,7 @@ At the terminal, run `jadx-gui gradle-tooling-extension-api.jar` to confirm the 
 
 ## Patching
 
-Download the [[Recaf](https://github.com/Col-E/Recaf/releases)](https://github.com/Col-E/Recaf/releases) library. Make sure to download the JAR file that is labeled `-with-dependencies.jar`.
+Download the [Recaf](https://github.com/Col-E/Recaf/releases)](https://github.com/Col-E/Recaf/releases) library. Make sure to download the JAR file that is labeled `-with-dependencies.jar`.
 
 ![image](https://github.com/rogerhu/studying-android-studio-internals/assets/326857/059b0cfd-47c5-4a1e-83f6-152c590b4e0a)
 
@@ -96,13 +96,13 @@ Recaf depends on having all the classes necessary to recompile the JAR file. If 
 
 ![image](https://github.com/rogerhu/studying-android-studio-internals/assets/326857/dc7c78aa-b474-42b6-9dc4-7e8af18aa855)
 
-To find any class references, you will likely need to use the same techniques described in the [[earlier section](https://www.notion.so/Patching-Java-byte-code-911a09142104417b90f4ae55cdc3092a?pvs=21)](https://www.notion.so/Patching-Java-byte-code-911a09142104417b90f4ae55cdc3092a?pvs=21) to find them. It basically is a combination of `grep` and using `zipgrep`/ `jadx-gui` on individual files to confirm these are the right ones.
+To find any class references, you will likely need to use a combination of `grep` and using `zipgrep`/ `jadx-gui` on individual files to confirm these are the right ones.
 
 Once you add a library, you will see the top-left corner turns into a drop-down. Only the JAR labeled `Primary` can be modified. For instance, here is an example of the dependent libraries for the `gradle-tooling-extension-api.jar` that were needed to update the `ProjectImportAction` class. There could be other JAR files depending on which class file you edit.
 
 ![image](https://github.com/rogerhu/studying-android-studio-internals/assets/326857/745e9859-c7e6-481a-b7c7-fb00c2ef3f1b)
 
-You can use the `Export workspace` option to save this configuration. The contents will be saved as JSON ([[example](https://square.slack.com/archives/C044SA66QF6/p1665015986611339?thread_ts=1664924516.076049&cid=C044SA66QF6)](https://square.slack.com/archives/C044SA66QF6/p1665015986611339?thread_ts=1664924516.076049&cid=C044SA66QF6)) and can be reloaded again by Recaf.
+You can use the `Export workspace` option to save this configuration. The contents will be saved as JSON and can be reloaded again by Recaf.
 
 Once you’ve identified the changes you want to make, you may need to deal with casting issues by the decompiler:
 
