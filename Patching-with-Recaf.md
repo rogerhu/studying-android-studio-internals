@@ -66,7 +66,7 @@ At the terminal, run `jadx-gui gradle-tooling-extension-api.jar` to confirm the 
 
 ## Patching
 
-Download the [Recaf](https://github.com/Col-E/Recaf/releases)](https://github.com/Col-E/Recaf/releases) library. Make sure to download the JAR file that is labeled `-with-dependencies.jar`.
+Download [Recaf](https://github.com/Col-E/Recaf/releases). Make sure to download the JAR file that is labeled `-with-dependencies.jar`.
 
 ![image](https://github.com/rogerhu/studying-android-studio-internals/assets/326857/059b0cfd-47c5-4a1e-83f6-152c590b4e0a)
 
