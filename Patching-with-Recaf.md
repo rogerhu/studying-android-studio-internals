@@ -124,7 +124,7 @@ The one exception is the ‘cannot find symbol class `AllModels` class, which ne
 
 ### Adding other Java classes
 
-Recaf doesn’t have a way to add Java classes, but you can do it pretty easily by creating the Java class and compiling it. We can simply create `[SimpleThreadFactor](http://SimpleThreadFactory.java)y.java` in a local editor. Note that we set the package to `org.jetbrains.plugins.gradle.model` so we will need to take care of this case later.
+Recaf doesn’t have a way to add Java classes, but you can do it pretty easily by creating the Java class and compiling it. We can simply create [SimpleThreadFactory.java](http://SimpleThreadFactory.java) in a local editor. Note that we set the package to `org.jetbrains.plugins.gradle.model` so we will need to take care of this case later.
 
 ```bash
 package org.jetbrains.plugins.gradle.model;
