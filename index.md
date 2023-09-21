@@ -61,7 +61,9 @@ Because Android Studio is a Java process, you can setup config options to be to 
 
 3. Quit and restart Android Studio to load the new `studio.vmoptions` set.
 
-## Step 3: Attach debugger to Android Studio
+## Step 3: Attach debugger 
+
+You'll first need to decide whether you need to attach a debugger to Android Studio, or the Gradle daemon. For more information, see how the [sync process](Sync-Process.md) works.
 
 You'll want to install a copy of IntelliJ to be able to attach to Android Studio. You may need to upgrade to the latest IntelliJ version.
 
@@ -85,14 +87,13 @@ You'll want to install a copy of IntelliJ to be able to attach to Android Studio
 
 ### Attaching to the Gradle Daemon
 
-There are times when you will want to observe the interaction between how the Gradle daemon works.
-
 1. Modify your `~/.gradle/gradle.properties` and add the following:
 
    ```gradle
    org.gradle.jvmargs=-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5006
    ```
 
+   If you want the Gradle daemon to wait until a debugger is attached, use `suspend=y`. For large Gradle subprojects
 2. `./gradlew --stop`
 
 3. `./gradlew help` to restart the daemon
