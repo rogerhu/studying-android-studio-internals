@@ -24,4 +24,7 @@ One limitation is that the sync process currently does not take advantage of con
 --init-script /private/var/folders/1v/v3_87mt519v6gvh3yl0vyr480000gn/T/ijinit.gradle
 ```
 
-This script loads the [ExtraModelBuilder](https://github.com/JetBrains/intellij-community/blob/53f8ee629ca0aafcf661b6f88c8fbf63d2b7b232/plugins/gradle/tooling-extension-impl/src/com/intellij/gradle/toolingExtension/impl/modelBuilder/ExtraModelBuilder.java#L53-L54), which in turn tries to find classes that extend `ExtraModelBuilder` or `ModelBuilderService`. 
+This script loads the [ExtraModelBuilder](https://github.com/JetBrains/intellij-community/blob/53f8ee629ca0aafcf661b6f88c8fbf63d2b7b232/plugins/gradle/tooling-extension-impl/src/com/intellij/gradle/toolingExtension/impl/modelBuilder/ExtraModelBuilder.java#L53-L54), which in turn tries to find classes that extend `ExtraModelBuilder` or `ModelBuilderService`. Attaching a breakpoint to the Gradle daemon shows the different model builders involved, some of which are needed for Kotlin language support:
+
+<img width="1171" alt="image" src="https://github.com/rogerhu/studying-android-studio-internals/assets/326857/bb296d04-9092-4c87-a76a-ef63c37f3c70">
+
