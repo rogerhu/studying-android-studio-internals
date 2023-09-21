@@ -37,3 +37,6 @@ for (ModelBuilderService service : modelBuilderServices) {
     if (service.canBuild(modelName)) return true;
 }
 ```
+
+Because of the extensibility of the IntelliJ platform, there are other ways in which models are created and augmented. You'll need to attach to both the Gradle daemon and the Android Studio process to
+study this mechanism in closer detail!
