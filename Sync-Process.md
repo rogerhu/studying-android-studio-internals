@@ -39,4 +39,4 @@ for (ModelBuilderService service : modelBuilderServices) {
 ```
 
 Because of the extensibility of the IntelliJ platform, there are other ways in which models are created and augmented. You'll need to attach to both the Gradle daemon and the Android Studio process to
-study this mechanism in closer detail!
+study this mechanism in closer detail! Read [this blog post](https://developer.squareup.com/blog/keeping-ide-sync-times-at-bay-a-historical-perspective/) for a historical context of the sync process too!
