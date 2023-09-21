@@ -5,5 +5,8 @@ color_scheme: android
 
 url: https://rogerhu.github.io/studying-android-studio-internals
 
+ga_tracking: G-T4N3ZZWMJ5
+ga_tracking_anonymize_ip: true
+
 aux_links:
   Template Repository: https://github.com/rogerhu/studying-android-studio-internals
